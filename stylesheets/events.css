@@ -120,6 +120,7 @@
 
 .event-div {
     width: 50%;
+    z-index : 1000 !important;
 }
 
 .fake-div {
@@ -365,6 +366,33 @@ a{
         -moz-filter: brightness(100%);
         -ms-filter: brightness(100%);
         filter: brightness(100%);
+    }
+}
+
+@media only screen and (max-width : 992px){
+    .event-div {
+        width: 100%;
+    }
+
+    .padding-left {
+        padding-left: 0rem;
+    }
+
+    .padding-right {
+        padding-right: 0rem;
+    }
+
+    .event-div:nth-child(odd) {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    .div-animation {
+        opacity : 1 !important;
+    }
+
+    .fake-div {
+        display: none;
     }
 }
 
