@@ -1,0 +1,28 @@
+.sponsor-heading {
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    font-weight: normal;
+    color: #303030;
+    letter-spacing: 1px;
+}
+
+.padding-top-bottom {
+    padding : 100px 0px;
+}
+
+.schedule-headline {
+    font-size : 22px;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    font-weight: normal;
+    color: #303030;
+    letter-spacing: 1px;
+}
+
+.schedule-headline:hover {
+    cursor: pointer;
+}
+
+.padding-top {
+    padding-top: 50px;
+}

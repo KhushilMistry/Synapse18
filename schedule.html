@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Synapse'18</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/sechdule.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/navbar.css">
+    <link rel="icon" href="./assets/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="main-icon-2">
+    <!--<img src="assets/logo.png" class="main-icon-image">-->
+</div>
+<span onclick="openNav()" class="navbar-button">&#9776;</span>
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="index.html">HOME</a>
+        <a href="events.html">EVENTS</a>
+        <a href="sponsors.html">SPONSORS</a>
+        <a href="schedule.html">SCHEDULE</a>
+        <a href="contact_us.html">CONNECT</a>
+        <a target="_blank" href="https://synapse-2018.herokuapp.com/">SIGN IN</a>
+        <a target="_blank" href="https://synapse-2018.herokuapp.com/signup">SIGN UP</a>
+    </div>
+</div>
+
+<div class="container padding-top-bottom">
+    <h2 class="sponsor-heading">SCHEDULE</h2>
+    <hr class="under_head">
+    <div class="row padding-top">
+        <div class="col-lg-3">
+            <p class="schedule-headline" onclick="displayImage(1)">22nd February</p>
+        </div>
+        <div class="col-lg-3">
+            <p class="schedule-headline" onclick="displayImage(2)">23th February</p>
+        </div>
+        <div class="col-lg-3">
+            <p class="schedule-headline" onclick="displayImage(3)">24th February</p>
+        </div>
+        <div class="col-lg-3">
+            <p class="schedule-headline" onclick="displayImage(4)">25th February</p>
+        </div>
+    </div>
+    <img id="day-1" class="padding-top-bottom" style="width: 100%;" src="assets/Schedule/22Feb.png">
+    <img id="day-2" class="padding-top-bottom" style="width: 100%;display:none;" src="assets/Schedule/23Feb.png">
+    <img id="day-3" class="padding-top-bottom" style="width: 100%;display:none;" src="assets/Schedule/24Feb.png">
+    <img id="day-4" class="padding-top-bottom" style="width: 100%;display:none;" src="assets/Schedule/25Feb.png">
+</div>
+
+
+<div class="footer">
+    <div class="row">
+        <div class="col-md-8">
+            <a class="footer-link" href="https://goo.gl/forms/vk7hm4Rpl6OJgJQQ2" target="_blank">CAMPUS AMBASSADOR</a>
+            <a class="footer-link" href="https://drive.google.com/file/d/0BxO7yBkG1U5RbEZsRHJFZWxKc1E/view"
+                    target="_blank">TRAILER</a>
+            <a class="footer-link" href="https://drive.google.com/file/d/0BxO7yBkG1U5RT2w1aExzOFJJaDA/view"
+                    target="_blank">BROCHURE</a>
+            <a class="footer-link" href="youth_run.html">YOUTH RUN</a>
+            <a class="footer-link" target="_blank" href="https://synapse-2018.herokuapp.com/">ACCOMMODATION</a>
+            <a class="footer-link" href="gallery.html">GALLERY</a>
+            <a class="footer-link" target="_blank"
+                    href="https://drive.google.com/open?id=1lPO4zPZODa7qYZIWbfRfPHp2HvW8TE4TdRTOdRXEn6o">BUT T-SHIRT</a>
+        </div>
+        <div class="col-md-4 right-align">
+            <a href="https://www.instagram.com/synapsedaiict/" target="_blank" class=""><i
+                    class="fa fa-instagram fa-lg footer-icon" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/synapsedaiict/?fref=ts" target="_blank" class=""><i
+                    href="https://www.facebook.com/synapsedaiict/?fref=ts" class="fa fa-facebook fa-lg footer-icon"
+                    aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/user/SynapseDAIICT" target="_blank" class=""><i
+                    class="fa fa-youtube-play fa-lg footer-icon" aria-hidden="true"></i></a>
+            <a href="mailto:synapse.thefest@gmail.com" target="_blank" class=""><i
+                    class="fa fa-envelope-o fa-lg footer-icon" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="footer-synapse-icon">
+        <img class="footer-synapse-icon-image" src="assets/logo.png">
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+<script>
+
+  function fullWidth() {
+    $('.bg-over-image').animate({ opacity: 1 }, 4000);
+    $('.bg-over-image-wrapper').animate({ opacity: 1 }, 4000);
+  }
+
+  function displayImage(number) {
+    if (number === 1) {
+      document.getElementById('day-1').style.display = 'block';
+      document.getElementById('day-2').style.display = 'none';
+      document.getElementById('day-3').style.display = 'none';
+      document.getElementById('day-4').style.display = 'none';
+    }
+    else if (number === 2) {
+      document.getElementById('day-1').style.display = 'none';
+      document.getElementById('day-2').style.display = 'block';
+      document.getElementById('day-3').style.display = 'none';
+      document.getElementById('day-4').style.display = 'none';
+    }
+    else if (number === 3) {
+      document.getElementById('day-1').style.display = 'none';
+      document.getElementById('day-2').style.display = 'none';
+      document.getElementById('day-3').style.display = 'block';
+      document.getElementById('day-4').style.display = 'none';
+    }
+    else if (number === 4) {
+      document.getElementById('day-1').style.display = 'none';
+      document.getElementById('day-2').style.display = 'none';
+      document.getElementById('day-3').style.display = 'none';
+      document.getElementById('day-4').style.display = 'block';
+    }
+  }
+
+  $(document).ready(function () {
+
+    $(window).on('scroll', (function () {
+      $('.div-animation').each(function (i) {
+
+        var bottom_of_object = $(this).position().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        if (bottom_of_window > bottom_of_object) {
+          $(this).animate({ 'opacity': '1' }, 2000);
+        }
+
+      });
+
+      $('.main-icon-2').each(function (i) {
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        console.log(bottom_of_window, $(window).height());
+
+        if (bottom_of_window > (2 * $(window).height() - 100)) {
+          $(this).fadeOut(300);
+        }
+        if (bottom_of_window < (2 * $(window).height() - 100)) {
+          $(this).fadeIn(300);
+        }
+
+      });
+
+
+    }));
+
+  });
+
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+
+  fullWidth();
+</script>
+<script>
+  $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+</script>
+</body>
+</html>

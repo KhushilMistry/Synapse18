@@ -116,6 +116,10 @@
     opacity: 0;
 }
 
+.fest-date {
+    font-size : 24px;
+}
+
 .gallery {
     text-align: center;
     padding: 100px 0px 100px 0px;

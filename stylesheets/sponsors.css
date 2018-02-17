@@ -1,0 +1,35 @@
+.sponsor-heading {
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    font-weight: normal;
+    color: #303030;
+    letter-spacing: 1px;
+}
+
+.padding-top-bottom {
+    padding : 100px 0px;
+}
+
+.sponsor-headline {
+    text-align: center;
+    padding: 25px 0px;
+    font-size : 24px;
+    color: #444444;
+}
+
+.sponsor-headline-small {
+    padding: 15px 0px;
+    text-align: center;
+    font-size : 18px;
+    color: #303030;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.padding-top {
+    padding-top: 50px;
+}
